@@ -11,7 +11,7 @@ source:
   sha256: 7d05980dbfcaa381e79b201ce05d7fe8e2bca62811f28e7b170211b0ba5c7bfc
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - euporie = euporie.app:App.launch
@@ -26,7 +26,7 @@ requirements:
     - jsonschema >=3.2.0,<4.0.0
     - jupyter_client ==6.1.12
     - nbformat >=5.1.3,<6.0.0
-    - pillow  #>=8.2.0,<9.0.0
+    - pillow >=8.2.0,<9.0.0
     - prompt-toolkit >=3.0.18,<4.0.0
     - python >=3.6,<4.0
     - rich >=10.1.0,<11.0.0
@@ -36,7 +36,7 @@ test:
     - euporie
     - euporie.libs.commonmark_extensions
   commands:
-    # - pip check  # disabled until pillow 8.2.0 is released 
+    - pip check
   requires:
     - pip
 
