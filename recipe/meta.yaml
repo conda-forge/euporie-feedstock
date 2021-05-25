@@ -23,6 +23,7 @@ requirements:
     - python >=3.6,<4.0
     - poetry
   run:
+    - appdirs
     - jsonschema >=3.2.0,<4.0.0
     - jupyter_client ==6.1.12
     - nbformat >=5.1.3,<6.0.0
