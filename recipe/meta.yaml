@@ -1,5 +1,5 @@
 {% set name = "euporie" %}
-{% set version = "0.1.13" %}
+{% set version = "0.1.14" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/euporie-{{ version }}.tar.gz
-  sha256: 477549d37a03e054a1623315fc9f0ed649e7b2dadbda26d6ad9684e778bac0b5
+  sha256: b880e8c87f032740c234ad995196a0b83b9fdb4ff5f873cbb1764155e6f3e763
 
 build:
   number: 0
@@ -29,6 +29,7 @@ requirements:
     - nbformat >=5.1.3,<6.0.0
     - pillow >=8.2.0,<9.0.0
     - prompt-toolkit >=3.0.18,<4.0.0
+    - pyperclip >=1.8.2,<2.0.0
     - python >=3.6,<4.0
     - rich >=10.1.0,<11.0.0
 
