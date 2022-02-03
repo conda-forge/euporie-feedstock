@@ -36,7 +36,6 @@ requirements:
 test:
   imports:
     - euporie
-    - euporie.libs.commonmark_extensions
   commands:
     - pip check
   requires:
