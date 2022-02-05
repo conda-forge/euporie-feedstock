@@ -11,7 +11,7 @@ source:
   sha256: 107c39823c689773da6a725492bdf3be173456eca45a1a9c8fa996f0d73b7992
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - euporie = euporie.app:App.launch
