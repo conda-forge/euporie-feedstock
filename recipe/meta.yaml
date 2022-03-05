@@ -1,5 +1,5 @@
 {% set name = "euporie" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/euporie-{{ version }}.tar.gz
-  sha256: 107c39823c689773da6a725492bdf3be173456eca45a1a9c8fa996f0d73b7992
+  sha256: 30d55017bd9ccc5fac8a8cdaf054a9b0f0725c3ff661529ae20dd9dabd554edc
 
 build:
   number: 0
@@ -34,6 +34,8 @@ requirements:
     - pyperclip >=1.8.2,<2.0.0
     - python >=3.6,<4.0
     - rich <12,>=11
+    - imagesize
+    - timg
 
 test:
   imports:
