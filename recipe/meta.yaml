@@ -1,5 +1,5 @@
 {% set name = "euporie" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/euporie-{{ version }}.tar.gz
-  sha256: 30d55017bd9ccc5fac8a8cdaf054a9b0f0725c3ff661529ae20dd9dabd554edc
+  sha256: 3a8bc788ff70147837af0667848d7810137b305f6b7f93b0d6d9318e3486f292
 
 build:
   number: 0
