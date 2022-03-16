@@ -47,14 +47,14 @@ test:
 
 about:
   home: https://github.com/joouha/euporie
-  license: GPL-3.0-or-later
-  license_family: GPL
+  license: MIT
+  license_family: MIT
   license_file: LICENSE
   summary: Euporie is a text-based user interface for running and editing Jupyter notebooks
   description: |
     Euporie is a text-based user interface for running and editing 
     Jupyter notebooks
-  doc_url: https://github.com/joouha/euporie
+  doc_url: https://euporie.readthedocs.io/
   dev_url: https://github.com/joouha/euporie
 
 extra:
