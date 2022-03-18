@@ -3,7 +3,7 @@ About euporie
 
 Home: https://github.com/joouha/euporie
 
-Package license: GPL-3.0-or-later
+Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/euporie-feedstock/blob/main/LICENSE.txt)
 
@@ -11,7 +11,7 @@ Summary: Euporie is a text-based user interface for running and editing Jupyter 
 
 Development: https://github.com/joouha/euporie
 
-Documentation: https://github.com/joouha/euporie
+Documentation: https://euporie.readthedocs.io/
 
 Euporie is a text-based user interface for running and editing
 Jupyter notebooks
