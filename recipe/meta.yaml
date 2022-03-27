@@ -33,9 +33,12 @@ requirements:
     - prompt-toolkit >=3.0.18,<4.0.0
     - pyperclip >=1.8.2,<2.0.0
     - python >=3.6,<4.0
-    - rich <12,>=11
+    - rich <13.0.0,>=12.0.1
     - imagesize
     - timg
+    - html2text
+    - linkify
+    - markdown-it-py
 
 test:
   imports:
