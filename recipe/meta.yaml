@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/euporie-{{ version }}.tar.gz
-  sha256: 7bafd1cb775152e15421caa3d6036740f355a69381623c08abc0a565f6d67b3a
+  sha256: 2ab8995fa34873a799a01cf41a0d3c2488e124cd7a41e849ea7c74b39d4c5390
 
 build:
   number: 0
