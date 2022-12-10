@@ -29,6 +29,7 @@ requirements:
   run:
     - aenum <4.0,>=3.1
     - appdirs >=1.4,<2
+    - aiohttp
     - python-fastjsonschema >=2.15.3,<2.15.4
     - flatlatex >=0.15,<1
     - imagesize >=1.3.0,<1.4.0
