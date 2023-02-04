@@ -1,5 +1,5 @@
 {% set name = "euporie" %}
-{% set version = "2.2.1" %}
+{% set version = "2.3.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/euporie-{{ version }}.tar.gz
-  sha256: cf3d1aacd6b8044ff557f08f3b9ead91d91fe78b6840d94238afd5560737452c
+  sha256: 567400ff653871fdddb209ea2d541e0eafd6f76ff39a35a2227bd701c5c2a6cb
 
 build:
   number: 0
@@ -47,6 +47,7 @@ requirements:
     - timg >=1.1,<2
     - typing-extensions >=4.2,<4.3
     - universal_pathlib >=0.0.19
+    - sixelcrop
 
 test:
   imports:
