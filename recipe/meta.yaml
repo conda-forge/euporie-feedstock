@@ -47,6 +47,7 @@ requirements:
     - timg >=1.1,<2
     - typing-extensions >=4.2,<4.3
     - universal_pathlib >=0.0.19
+    - sixelcrop
 
 test:
   imports:
