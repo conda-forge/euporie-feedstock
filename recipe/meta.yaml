@@ -48,6 +48,7 @@ requirements:
     - typing-extensions >=4.2,<4.3
     - universal_pathlib >=0.0.19
     - sixelcrop
+    - platformdirs >=3.5,<3.6
 
 test:
   imports:
