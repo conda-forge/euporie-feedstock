@@ -45,9 +45,10 @@ requirements:
     - pyperclip >=1.8,<2.0.0
     - python >=3.8,<4.0
     - timg >=1.1,<2
-    - typing-extensions >=4.2,<4.3
+    - typing-extensions >=4.5,<4.6
     - universal_pathlib >=0.0.19
     - sixelcrop
+    - platformdirs >=3.5,<3.6
 
 test:
   imports:
