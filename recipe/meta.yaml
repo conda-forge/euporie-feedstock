@@ -46,6 +46,7 @@ requirements:
     - sixelcrop >=0.1.3,<0.2.dev0
     - universal_pathlib <0.0.24
     - fsspec >=2022.8.0
+    - aiohttp
 
 test:
   imports:
