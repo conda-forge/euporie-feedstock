@@ -61,6 +61,7 @@ test:
     - euporie-hub --help
   requires:
     - pip
+    - asyncssh
 
 about:
   home: https://github.com/joouha/euporie
