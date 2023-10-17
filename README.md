@@ -7,15 +7,9 @@ Home: https://github.com/joouha/euporie
 
 Package license: MIT
 
-Summary: Euporie is a text-based user interface for running and editing Jupyter notebooks
+Summary: Euporie is a suite of terminal applications for interacting with Jupyter kernels
 
 Development: https://github.com/joouha/euporie
-
-Documentation: https://euporie.readthedocs.io/
-
-Euporie is a text-based user interface for running and editing
-Jupyter notebooks
-
 
 Current build status
 ====================
