@@ -47,6 +47,7 @@ requirements:
     - universal_pathlib <0.0.24
     - fsspec >=2022.8.0
     - aiohttp
+    - requests
 
 test:
   imports:
