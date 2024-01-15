@@ -1,5 +1,5 @@
 {% set name = "euporie" %}
-{% set version = "2.6.2" %}
+{% set version = "2.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/euporie-{{ version }}.tar.gz
-  sha256: 3aa0fc9f66e73a7807ca1905e57761bf1b96d640dcb3ed460ef621202b888f05
+  sha256: f42dbcb3b0c4ff738582101db4ed601797f769cb370fdb50a6c250fbece7774c
 
 build:
   entry_points:
@@ -26,6 +26,7 @@ requirements:
     - hatchling
     - pip
   run:
+    - jupytext >=1.14.0
     - python >=3.8
     - prompt-toolkit >=3.0.36,<3.1.dev0
     - pygments >=2.11,<3.dev0
@@ -41,11 +42,11 @@ requirements:
     - linkify-it-py >=1.0,<2.dev0
     - mdit-py-plugins >=0.3.0,<0.4.dev0
     - flatlatex >=0.15,<1.dev0
-    - timg >=1.1,<2.dev0
+    - timg >=1.1.6,<1.2.dev0
     - pillow >=9.0,<10.dev0
-    - sixelcrop >=0.1.3,<0.2.dev0
-    - universal_pathlib <0.0.24
-    - fsspec >=2022.8.0
+    - sixelcrop >=0.1.6,<0.2.dev0
+    - universal_pathlib >=0.1.4,<0.2.dev0
+    - fsspec >=2022.12.0
 
 test:
   imports:
