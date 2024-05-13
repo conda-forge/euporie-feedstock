@@ -1,5 +1,5 @@
 {% set name = "euporie" %}
-{% set version = "2.8.1" %}
+{% set version = "2.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/euporie-{{ version }}.tar.gz
-  sha256: 801233f34ffffa875c0c09cf476e8a9f63990ada98197cb8ac5526e297f9c976
+  sha256: 07ea97669bcc46ba6a931027fffb4fdfb447c192a016ab92e9b2a0cee485c400
 
 build:
   entry_points:
@@ -43,7 +43,7 @@ requirements:
     - mdit-py-plugins >=0.3.0,<0.4.dev0
     - flatlatex >=0.15,<1.dev0
     - timg >=1.1.6,<1.2.dev0
-    - pillow >=9.0,<10.dev0
+    - pillow >=9.0
     - sixelcrop >=0.1.6,<0.2.dev0
     - universal_pathlib >=0.2.1,<0.3.dev0
     - fsspec >=2022.12.0
