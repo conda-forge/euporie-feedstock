@@ -1,5 +1,5 @@
 {% set name = "euporie" %}
-{% set version = "2.8.2" %}
+{% set version = "2.8.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/euporie-{{ version }}.tar.gz
-  sha256: 07ea97669bcc46ba6a931027fffb4fdfb447c192a016ab92e9b2a0cee485c400
+  sha256: d9b748a8da0b812d8ca0a2b48319e1a8f3025b60ba3428bbec13fa1924492dfc
 
 build:
   entry_points:
@@ -38,7 +38,7 @@ requirements:
     - platformdirs >=3.5,<4.dev0
     - pyperclip >=1.8,<2.dev0
     - imagesize >=1.3,<2.dev0
-    - markdown-it-py >=2.1.0,<2.2.dev0
+    - markdown-it-py >=2.2.0,<2.3.dev0
     - linkify-it-py >=1.0,<2.dev0
     - mdit-py-plugins >=0.3.0,<0.4.dev0
     - flatlatex >=0.15,<1.dev0
