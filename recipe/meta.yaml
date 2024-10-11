@@ -1,5 +1,5 @@
 {% set name = "euporie" %}
-{% set version = "2.8.3" %}
+{% set version = "2.8.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/euporie-{{ version }}.tar.gz
-  sha256: d9b748a8da0b812d8ca0a2b48319e1a8f3025b60ba3428bbec13fa1924492dfc
+  sha256: b7e626781a79158c0f5968d8379a3f7ef9e933c299c6435ccde8c753ec7ae360
 
 build:
   entry_points:
@@ -26,6 +26,7 @@ requirements:
     - hatchling
     - pip
   run:
+    - typing_extensions >=4.5,<5.dev0
     - jupytext >=1.14.0
     - python >=3.8
     - prompt-toolkit >=3.0.36,<3.1.dev0
@@ -38,13 +39,13 @@ requirements:
     - platformdirs >=3.5,<4.dev0
     - pyperclip >=1.8,<2.dev0
     - imagesize >=1.3,<2.dev0
-    - markdown-it-py >=2.2.0,<2.3.dev0
-    - linkify-it-py >=1.0,<2.dev0
-    - mdit-py-plugins >=0.3.0,<0.4.dev0
+    - markdown-it-py >=3.0,<4.dev0
+    - linkify-it-py >=2.0,<3.dev0
+    - mdit-py-plugins >=0.4.2,<0.5.dev0
     - flatlatex >=0.15,<1.dev0
     - timg >=1.1.6,<1.2.dev0
     - pillow >=9.0
-    - sixelcrop >=0.1.6,<0.2.dev0
+    - sixelcrop >=0.1.8,<0.2.dev0
     - universal_pathlib >=0.2.1,<0.3.dev0
     - fsspec >=2022.12.0
 
