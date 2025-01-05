@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/euporie-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/euporie-{{ version }}.tar.gz
   sha256: b7e626781a79158c0f5968d8379a3f7ef9e933c299c6435ccde8c753ec7ae360
 
 build:
@@ -18,17 +18,17 @@ build:
     - euporie-hub = euporie.hub.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - hatchling
     - pip
   run:
     - typing_extensions >=4.5,<5.dev0
     - jupytext >=1.14.0
-    - python >=3.8
+    - python >={{ python_min }}
     - prompt-toolkit >=3.0.36,<3.1.dev0
     - pygments >=2.11,<3.dev0
     - nbformat >=5.0,<6.dev0
@@ -64,6 +64,7 @@ test:
     - aiohttp
     - asyncssh
     - requests
+    - python {{ python_min }}
 
 about:
   home: https://github.com/joouha/euporie
