@@ -1,5 +1,5 @@
 {% set name = "euporie" %}
-{% set version = "2.8.4" %}
+{% set version = "2.8.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/euporie-{{ version }}.tar.gz
-  sha256: b7e626781a79158c0f5968d8379a3f7ef9e933c299c6435ccde8c753ec7ae360
+  sha256: 42c8d671660a58d43a6a3579a480ce1272a5e7f7b61fefef5ed71df925640fe8
 
 build:
   entry_points:
@@ -18,7 +18,7 @@ build:
     - euporie-hub = euporie.hub.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -45,7 +45,7 @@ requirements:
     - flatlatex >=0.15,<1.dev0
     - timg >=1.1.6,<1.2.dev0
     - pillow >=9.0
-    - sixelcrop >=0.1.8,<0.2.dev0
+    - sixelcrop >=0.1.9,<0.2.dev0
     - universal_pathlib >=0.2.1,<0.3.dev0
     - fsspec >=2022.12.0
 
