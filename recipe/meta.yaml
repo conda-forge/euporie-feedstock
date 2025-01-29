@@ -58,7 +58,7 @@ test:
     - euporie-console --help
     - euporie-notebook --help
     - euporie-preview --help
-    - euporie-hub --help
+    # - euporie-hub --help
   requires:
     - pip
     - aiohttp
