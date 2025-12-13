@@ -1,5 +1,5 @@
 {% set name = "euporie" %}
-{% set version = "2.9.1" %}
+{% set version = "2.10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/euporie-{{ version }}.tar.gz
-  sha256: 47fbf6155a28bd0a575df738935c0d0bc97a828c87a6bd4266e869606618442e
+  sha256: 7bc313408f5019ed019d3e82a80621679d05ed2bb54935906b4c344243a76f07
 
 build:
   entry_points:
@@ -26,6 +26,7 @@ requirements:
     - hatchling
     - pip
   run:
+    - python-code-minimap >=0.1.1
     - universal-pathlib >=0.2.1,<0.3.dev0
     - aiohttp >=3.9,<4.dev0
     - typing_extensions >=4.5,<5.dev0
