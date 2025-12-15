@@ -1,5 +1,5 @@
 {% set name = "euporie" %}
-{% set version = "2.10.1" %}
+{% set version = "2.10.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/euporie-{{ version }}.tar.gz
-  sha256: 7bc313408f5019ed019d3e82a80621679d05ed2bb54935906b4c344243a76f07
+  sha256: 6c349570a691bf613f2291689dc1b8e7e070dc32db674e119a0e27efeddf78af
 
 build:
   entry_points:
@@ -32,7 +32,7 @@ requirements:
     - typing_extensions >=4.5,<5.dev0
     - jupytext >=1.14.0
     - python >={{ python_min }}
-    - prompt-toolkit >=3.0.36,<3.1.dev0
+    - prompt-toolkit >=3.0.52
     - pygments >=2.11,<3.dev0
     - nbformat >=5.0,<6.dev0
     - jupyter_client >=7.1
