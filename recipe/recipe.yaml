@@ -1,28 +1,32 @@
-{% set name = "euporie" %}
-{% set version = "2.10.4" %}
+schema_version: 1
+
+context:
+  name: euporie
+  version: "2.10.4"
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: ${{ name|lower }}
+  version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/euporie-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/euporie-${{ version }}.tar.gz
   sha256: e80774a0e6f081f47e84249eca18c04237169ba967609985a482e1db0101e88b
 
 build:
-  entry_points:
-    - euporie = euporie.core.__main__:main
-    - euporie-console = euporie.console.__main__:main
-    - euporie-notebook = euporie.notebook.__main__:main
-    - euporie-preview = euporie.preview.__main__:main
-    - euporie-hub = euporie.hub.__main__:main
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  python:
+    entry_points:
+      - euporie = euporie.core.__main__:main
+      - euporie-console = euporie.console.__main__:main
+      - euporie-notebook = euporie.notebook.__main__:main
+      - euporie-preview = euporie.preview.__main__:main
+      - euporie-hub = euporie.hub.__main__:main
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python ${{ python_min }}.*
     - hatchling
     - pip
   run:
@@ -31,7 +35,7 @@ requirements:
     - aiohttp >=3.9,<4.dev0
     - typing_extensions >=4.5,<5.dev0
     - jupytext >=1.14.0
-    - python >={{ python_min }}
+    - python >=${{ python_min }}
     - prompt-toolkit >=3.0.52
     - pygments >=2.11,<3.dev0
     - nbformat >=5.0,<6.dev0
@@ -52,29 +56,31 @@ requirements:
     - universal_pathlib >=0.2.1,<0.3.dev0
     - fsspec >=2022.12.0
 
-test:
-  imports:
-    - euporie
-  commands:
-    - pip check
-    - euporie --help
-    - euporie-console --help
-    - euporie-notebook --help
-    - euporie-preview --help
-    # - euporie-hub --help
-  requires:
-    - pip
-    - aiohttp
-    - asyncssh
-    - requests
-    - python {{ python_min }}
+tests:
+  - python:
+      imports:
+        - euporie
+      pip_check: true
+      python_version: ${{ python_min }}
+  - requirements:
+      run:
+        - pip
+        - aiohttp
+        - asyncssh
+        - requests
+        - python ${{ python_min }}.*
+    script:
+      - euporie --help
+      - euporie-console --help
+      - euporie-notebook --help
+      - euporie-preview --help
 
 about:
-  home: https://github.com/joouha/euporie
   summary: Euporie is a suite of terminal applications for interacting with Jupyter kernels
-  dev_url: https://github.com/joouha/euporie
   license: MIT
   license_file: LICENSE
+  homepage: https://github.com/joouha/euporie
+  repository: https://github.com/joouha/euporie
 
 extra:
   recipe-maintainers:
